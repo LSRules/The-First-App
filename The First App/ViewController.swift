@@ -1,7 +1,7 @@
 //
 //  ViewController.swift
 //  The First App
-//
+//  Why are you reading this?
 //  Created by Liam on 28/11/2017.
 //  Copyright © 2017 Liam. All rights reserved.
 //
