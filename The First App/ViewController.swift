@@ -14,14 +14,11 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var myLabel: UILabel!
     
-    
     @IBOutlet weak var topTextField: UITextField!
     
     @IBOutlet weak var bottomTextField: UITextField!
    
     @IBOutlet weak var arSwitch: UISwitch!
-    
-    @IBOutlet weak var arLabel: UILabel!
     
     @IBAction func myButton(_ sender: Any) {
 
