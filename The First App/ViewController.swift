@@ -12,12 +12,20 @@ class ViewController: UIViewController {
 
 //    var count = 0
     
+
+
     @IBOutlet weak var myLabel: UILabel!
     
     @IBOutlet weak var topTextField: UITextField!
     
     @IBOutlet weak var bottomTextField: UITextField!
-   
+
+    @IBAction func clearButton(_ sender: Any) {
+        topTextField.text = ""
+        bottomTextField.text = ""
+        myLabel.text = " "
+    }
+    
     @IBAction func myButton(_ sender: Any) {
 
             let sum = Double(topTextField.text!)! + Double(bottomTextField.text!)!
