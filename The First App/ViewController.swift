@@ -18,27 +18,32 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var bottomTextField: UITextField!
    
-    @IBOutlet weak var arSwitch: UISwitch!
-    
     @IBAction func myButton(_ sender: Any) {
 
-        let addition = arSwitch.isOn
- 
-        if addition{
             let sum = Double(topTextField.text!)! + Double(bottomTextField.text!)!
             
-            myLabel.text = "\(topTextField.text!) + \(bottomTextField.text!) = \(sum)"
-        }else{
-            let sum = Double(topTextField.text!)! - Double(bottomTextField.text!)!
-            
-            myLabel.text = "\(topTextField.text!) - \(bottomTextField.text!) = \(sum)"
-}
+            myLabel.text = "\(topTextField.text!) + \(bottomTextField.text!) = \(sum)"}
         
+    
+    @IBAction func subButton(_ sender: Any) {
+        let sum = Double(topTextField.text!)! - Double(bottomTextField.text!)!
         
+        myLabel.text = "\(topTextField.text!) - \(bottomTextField.text!) = \(sum)"
+    }
+    
+    @IBAction func muButton(_ sender: Any) {
+        let sum = Double(topTextField.text!)! * Double(bottomTextField.text!)!
         
-        print(topTextField.text!)
-        print(bottomTextField.text!)
+        myLabel.text = "\(topTextField.text!) x \(bottomTextField.text!) = \(sum)"
+    }
+    
+    
+    @IBAction func diButton(_ sender: Any) {
+        let sum = Double(topTextField.text!)! / Double(bottomTextField.text!)!
         
+        myLabel.text = "\(topTextField.text!) ÷ \(bottomTextField.text!) = \(sum)"
+    }
+    
         /*
         count += 1
         
@@ -50,7 +55,7 @@ class ViewController: UIViewController {
             myLabel.text = "You tapped the button 10 times!"
         }
     */
-    }
+    
  
     override func viewDidLoad() {
         super.viewDidLoad()
